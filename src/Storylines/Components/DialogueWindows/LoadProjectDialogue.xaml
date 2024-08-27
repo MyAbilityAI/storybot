@@ -15,10 +15,11 @@
     <Grid MaxHeight="500"
           MinHeight="350"
           Width="400"
+          RowSpacing="8"
           Margin="4">
         <Grid.RowDefinitions>
             <RowDefinition Height="40" />
-            <RowDefinition Height="130" />
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 

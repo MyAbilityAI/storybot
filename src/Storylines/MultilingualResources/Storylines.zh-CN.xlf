@@ -862,6 +862,22 @@ the "Add new character" button.</source>
           <source>Submit</source>
           <target state="new">Submit</target>
         </trans-unit>
+        <trans-unit id="githubBannerDescription.Text" translate="yes" xml:space="preserve">
+          <source>Click here to give Storylines a Star on GitHub</source>
+          <target state="new">Click here to give Storylines a Star on GitHub</target>
+        </trans-unit>
+        <trans-unit id="githubBannerTitle.Text" translate="yes" xml:space="preserve">
+          <source>GitHub Stars Count</source>
+          <target state="new">GitHub Stars Count</target>
+        </trans-unit>
+        <trans-unit id="recurrentsDescription.Text" translate="yes" xml:space="preserve">
+          <source>Download our New App for Windows Today</source>
+          <target state="new">Download our New App for Windows Today</target>
+        </trans-unit>
+        <trans-unit id="recurrentsTitle.Text" translate="yes" xml:space="preserve">
+          <source>Manage Your Subscriptions</source>
+          <target state="new">Manage Your Subscriptions</target>
+        </trans-unit>
       </group>
     </body>
   </file>

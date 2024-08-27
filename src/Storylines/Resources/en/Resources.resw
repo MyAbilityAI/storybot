@@ -439,6 +439,12 @@ Did you want to exit without saving your progress?</value>
   <data name="generalText.Text" xml:space="preserve">
     <value>General</value>
   </data>
+  <data name="githubBannerDescription.Text" xml:space="preserve">
+    <value>Click here to give Storylines a Star on GitHub</value>
+  </data>
+  <data name="githubBannerTitle.Text" xml:space="preserve">
+    <value>GitHub Stars Count</value>
+  </data>
   <data name="githubRepository.Text" xml:space="preserve">
     <value>GitHub repository</value>
   </data>
@@ -622,6 +628,12 @@ the "Add new character" button.</value>
   </data>
   <data name="ReadMode.Label" xml:space="preserve">
     <value>Read mode</value>
+  </data>
+  <data name="recurrentsDescription.Text" xml:space="preserve">
+    <value>Download our New App for Windows Today</value>
+  </data>
+  <data name="recurrentsTitle.Text" xml:space="preserve">
+    <value>Manage Your Subscriptions</value>
   </data>
   <data name="remove.Label" xml:space="preserve">
     <value>Remove</value>

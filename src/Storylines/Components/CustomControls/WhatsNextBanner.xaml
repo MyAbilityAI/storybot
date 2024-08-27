@@ -5,33 +5,74 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:animations="using:Microsoft.Toolkit.Uwp.UI.Animations"
              mc:Ignorable="d"
+             xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
              d:DesignHeight="300"
              d:DesignWidth="400">
 
-    <Grid>
-        <Button Click="WhatsNext_OnClick"
-                CornerRadius="4"
-                Width="400">
-            <Grid Margin="-15">
-                <!--PointerExited="Button_PointerExited" PointerEntered="Button_PointerEntered"-->
-                <Image Source="/Assets/Other/banner-export.png" />
-                <Grid Margin="25">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="30" />
-                        <RowDefinition />
-                        <RowDefinition Height="2" />
-                        <RowDefinition />
-                    </Grid.RowDefinitions>
-                    <TextBlock x:Uid="whatsNextTitle"
-                               FontSize="22"
-                               FontWeight="Bold"
-                               Grid.Row="1"
-                               Foreground="White" />
-                    <TextBlock x:Uid="whatsNextDescription"
-                               Grid.Row="3"
-                               Foreground="#ececec" />
-                </Grid>
-            </Grid>
-        </Button>
-    </Grid>
+    <StackPanel>
+        <FlipView x:Name="Gallery"
+                  Height="115">
+
+            <FlipViewItem>
+                <Button Click="Recurrents_OnClick"
+                        CornerRadius="4"
+                        VerticalAlignment="Top"
+                        Width="400">
+                    <Grid Margin="-15">
+                        <Image Source="/Assets/Other/recurrents-banner.png" />
+                        <Grid Margin="25">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="26" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="3" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <TextBlock x:Uid="recurrentsTitle"
+                                       FontSize="22"
+                                       FontWeight="Bold"
+                                       Grid.Row="1"
+                                       Foreground="White" />
+                            <TextBlock x:Uid="recurrentsDescription"
+                                       Grid.Row="3"
+                                       Foreground="#ececec" />
+                        </Grid>
+                    </Grid>
+                </Button>
+            </FlipViewItem>
+
+            <FlipViewItem>
+                <Button Click="GitHubBanner_OnClick"
+                        CornerRadius="4"
+                        VerticalAlignment="Top"
+                        Width="400">
+                    <Grid Margin="-15">
+                        <Image Source="/Assets/Other/banner-export.png" />
+                        <Grid Margin="25">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="30" />
+                                <RowDefinition />
+                                <RowDefinition Height="2" />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <TextBlock x:Uid="githubBannerTitle"
+                                       FontSize="22"
+                                       FontWeight="Bold"
+                                       Grid.Row="1"
+                                       Foreground="White" />
+                            <TextBlock x:Uid="githubBannerDescription"
+                                       Grid.Row="3"
+                                       Foreground="#ececec" />
+                        </Grid>
+                    </Grid>
+                </Button>
+            </FlipViewItem>
+
+        </FlipView>
+
+        <muxc:PipsPager x:Name="FlipViewPipsPager"
+                        HorizontalAlignment="Center"
+                        Margin="0, 10, 0, 0"
+                        NumberOfPages="2"
+                        SelectedPageIndex="{x:Bind Path=Gallery.SelectedIndex, Mode=TwoWay}" />
+    </StackPanel>
 </UserControl>
